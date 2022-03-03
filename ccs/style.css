@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  background-color: #eee;
+}
+#container {
+  display: flex;
+  flex-direction: row;
+}
+nav {
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  background-color: #ddd;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+main article:first-child {
+  flex: 1;
+}
+main article:last-child {
+  flex: 0.3;
+}
+
+nav:first-child {
+  padding-top: 1em;
+}
+nav a {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.3rem;
+  text-decoration: none;
+  margin-left: 1em;
+  color: #999999;
+}
+nav a img {
+  float: left;
+  padding-right: .1em;
+}
+nav a:hover {
+  padding: 0.3rem;
+  text-decoration: none;
+  margin-left: 1em;
+  color: #fff;
+  background-color: #888;
+}
+
+section:first-child > h1 {
+  font-size: 2em;
+  margin-left: 1em;
+}
+#accesos {
+  margin-left: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.accesoContenido {
+  margin: 0.9em;
+}
+.accesoContenido > :first-child {
+  background-color: #1874a5;
+  padding: 1em;
+  color: white;
+  font-weight: bold;
+}
+.accesoContenido > :last-child {
+  background-color: #eee;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.accesoContenido > :last-child > a {
+  text-decoration: none;
+  padding: 0.2em;
+}
+#contenedorAgenda {
+  background-color: #eee;
+  margin: 1em;
+}
+
+table {
+  width: 100%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #888;
+
+}
+thead td[colspan="5"] {
+  text-align: center;
+  color: #1874a5;
+}
+thead td:first-child {
+  text-align: left;
+}
+thead td:last-child {
+  text-align: right;
+}
+table div {
+  width: 1.5em;
+  height: 1.5em;
+  background: white;
+  border-radius: 50%;
+  text-align: center;
+}
+table td {
+  padding: 0.3em;
+}
+
+#contenedorEventos {
+  background-color: #eee;
+  margin: 1em;
+}
+.eventosDia {
+  margin:  .0em 1em;
+  padding: 0;
+}
+.eventosDia > h1 {
+  color: #999999;
+  padding-top: .4em;
+}
+.evento:last-child {
+  padding-bottom: 1em;
+}
+.evento > h2 {
+  color: #1874a5;
+  font-size: 1em;
+}
+.evento > img {
+  float: left;
+  margin-right: .4em;
+}
+.evento > p {
+  font-size: .9em;
+  color: black;
+  margin: .1em .8em;
+}

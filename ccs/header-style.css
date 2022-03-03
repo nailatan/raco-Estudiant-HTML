@@ -1,0 +1,32 @@
+#opciones {
+  font-family: "Rubik", sans-serif;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    hsla(256, 84%, 55%, 1) 9%,
+    hsla(197, 94%, 51%, 1) 90%
+  );
+}
+
+#alumno {
+  width: 4em;
+  margin: 0.5em 0.7em;
+  height: 4em;
+  background: white;
+  border-radius: 50%;
+}
+#alumno > img {
+  margin: 0.8em 0.5em;
+  display: block;
+}
+#opciones :nth-child(3) {
+  margin-left: auto;
+}
+#opciones select {
+  margin-right: 0rem;
+  height: 2em;
+  margin-right: 0.8em;
+}
