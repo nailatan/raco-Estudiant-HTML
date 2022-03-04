@@ -1,10 +1,12 @@
 body {
   margin: 0;
-  background-color: #eee;
+  background-color: #ddd;
+  height: 100vh;
 }
 #container {
   display: flex;
   flex-direction: row;
+  height: 100%;
 }
 nav {
   background-color: #eee;
@@ -21,7 +23,7 @@ main {
 main article:first-child {
   flex: 1;
 }
-main article:last-child {
+main article:nth-child(2) {
   flex: 0.3;
 }
 
@@ -37,7 +39,7 @@ nav a {
 }
 nav a img {
   float: left;
-  padding-right: .1em;
+  padding-right: 0.1em;
 }
 nav a:hover {
   padding: 0.3rem;
@@ -82,9 +84,9 @@ section:first-child > h1 {
 
 table {
   width: 100%;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   color: #888;
-
 }
 thead td[colspan="5"] {
   text-align: center;
@@ -112,12 +114,12 @@ table td {
   margin: 1em;
 }
 .eventosDia {
-  margin:  .0em 1em;
+  margin: 0em 1em;
   padding: 0;
 }
 .eventosDia > h1 {
   color: #999999;
-  padding-top: .4em;
+  padding-top: 0.4em;
 }
 .evento:last-child {
   padding-bottom: 1em;
@@ -128,10 +130,28 @@ table td {
 }
 .evento > img {
   float: left;
-  margin-right: .4em;
+  margin-right: 0.4em;
 }
 .evento > p {
-  font-size: .9em;
+  font-size: 0.9em;
   color: black;
-  margin: .1em .8em;
+  margin: 0.1em 0.8em;
+}
+
+#detalleDia {
+  position: absolute;
+  background-color: #eee;
+  width: 35em;
+  height: 25em;
+  top: 35%;
+  left: 25%;
+  border-bottom: 4px solid #1874a5;
+  border-left: 4px solid #1874a5;
+  border-right: 4px solid #1874a5;
+  display: none;
+}
+#detalleDia > div:first-child {
+  text-align: right;
+  background-color: #1874a5;
+  padding: 0.3em 0em;
 }
