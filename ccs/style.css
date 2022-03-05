@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #ddd;
+  background-color: #fff;
   height: 100vh;
 }
 #container {
@@ -9,13 +9,13 @@ body {
   height: 100%;
 }
 nav {
-  background-color: #eee;
+  background-color: #00204a;
   display: flex;
   flex-direction: column;
 }
 
 main {
-  background-color: #ddd;
+  background-color: #fff;
   display: flex;
   flex-direction: row;
   flex: 1;
@@ -52,6 +52,7 @@ nav a:hover {
 section:first-child > h1 {
   font-size: 2em;
   margin-left: 1em;
+  color: #005792;
 }
 #accesos {
   margin-left: 1em;
@@ -61,12 +62,19 @@ section:first-child > h1 {
 .accesoContenido {
   margin: 0.9em;
 }
-.accesoContenido > :first-child {
-  background-color: #1874a5;
+.accesoContenido:nth-child(2n) > :first-child {
+  background-color: #005792;
   padding: 1em;
-  color: white;
+  color: #fdb44b;
   font-weight: bold;
 }
+.accesoContenido:nth-child(2n + 1) > :first-child {
+  background-color: #fdb44b;
+  padding: 1em;
+  color: #005792;
+  font-weight: bold;
+}
+
 .accesoContenido > :last-child {
   background-color: #eee;
   padding: 1em;
@@ -88,9 +96,9 @@ table {
     "Lucida Sans", Arial, sans-serif;
   color: #888;
 }
-thead td[colspan="5"] {
+thead th[colspan="5"] {
   text-align: center;
-  color: #1874a5;
+  color: #005792;
 }
 thead td:first-child {
   text-align: left;
@@ -98,6 +106,7 @@ thead td:first-child {
 thead td:last-child {
   text-align: right;
 }
+
 table div {
   width: 1.5em;
   height: 1.5em;
@@ -118,14 +127,14 @@ table td {
   padding: 0;
 }
 .eventosDia > h1 {
-  color: #999999;
+  color: #00204a;
   padding-top: 0.4em;
 }
 .evento:last-child {
   padding-bottom: 1em;
 }
 .evento > h2 {
-  color: #1874a5;
+  color: #005792;
   font-size: 1em;
 }
 .evento > img {
@@ -133,7 +142,7 @@ table td {
   margin-right: 0.4em;
 }
 .evento > p {
-  font-size: 0.9em;
+  font-size: 1em;
   color: black;
   margin: 0.1em 0.8em;
 }
@@ -145,13 +154,13 @@ table td {
   height: 25em;
   top: 35%;
   left: 25%;
-  border-bottom: 4px solid #1874a5;
-  border-left: 4px solid #1874a5;
-  border-right: 4px solid #1874a5;
+  border-bottom: 4px solid #00204a;
+  border-left: 4px solid #00204a;
+  border-right: 4px solid #00204a;
   display: none;
 }
 #detalleDia > div:first-child {
   text-align: right;
-  background-color: #1874a5;
+  background-color: #00204a;
   padding: 0.3em 0em;
 }
