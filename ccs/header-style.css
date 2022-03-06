@@ -1,8 +1,6 @@
 #opciones {
   font-family: "Rubik", sans-serif;
   color: white;
-  display: flex;
-  justify-content: flex-start;
   align-items: center;
   background: linear-gradient(45deg, #00204a 45%, #fff 98%);
 }
@@ -29,11 +27,7 @@
 
 nav {
   background: linear-gradient(45deg, #00204a 45%, #fff 98%);
-  display: flex;
   color: #fdb44b;
-  flex-direction: row;
-  justify-content: space-around;
-  position: sticky;
   top: 0;
   height: 3em;
   text-align: center;
@@ -79,4 +73,4 @@ nav a:nth-child(2n):hover {
   color: #fff;
   background-color: #888;
   color: #fdb44b;
-  /* border-radius: 0 0 0 0; */
+}

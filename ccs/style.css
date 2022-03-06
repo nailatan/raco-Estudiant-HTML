@@ -1,18 +1,33 @@
+.FRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.FColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.JC-SpaceAround {
+  justify-content: space-around;
+}
+
+.JCFlexStart {
+  justify-content: flex-start;
+}
+
+.FPositionSticky {
+  position: sticky;
+}
+
 body {
   margin: 0;
   background-color: #fff;
   height: 100vh;
 }
-#container {
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-}
 
 main {
   background-color: #fff;
-  display: flex;
-  flex-direction: row;
   flex: 1;
 }
 main article:first-child {
@@ -51,12 +66,11 @@ section h1 {
 .accesoContenido > :last-child {
   background-color: #eee;
   padding: 1em;
-  display: flex;
-  flex-direction: column;
 }
 .accesoContenido > :last-child > a {
   text-decoration: none;
   padding: 0.2em;
+  display: block;
 }
 #contenedorAgenda {
   background-color: #eee;
@@ -94,6 +108,7 @@ table td {
 #contenedorEventos {
   background-color: #eee;
   margin: 1em;
+  height: 100vh;
 }
 .eventosDia {
   margin: 0em 1em;
@@ -131,6 +146,7 @@ table td {
   border-left: 4px solid #00204a;
   border-right: 4px solid #00204a;
   display: none;
+  box-shadow: 15px 10px 3px #00204a;
 }
 #detalleDia > div:first-child {
   text-align: right;
@@ -141,23 +157,39 @@ table td {
 #noticies {
   background-color: #eee;
   margin-left: 1em;
-  /* height: 30vh; */
   padding: 1em;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   align-items: center;
-  /* position: relative; */
 }
 
-#noticies h1:first-child {
-  position: relative;
-  top: 10px;
-  left: 0;
-  color: #fff;
-}
 .noticia {
   background-color: #fdb44b;
   padding: 0.4em;
   width: 15em;
+  height: 21em;
+  min-height: 21em;
+  max-height: 21em;
+}
+.noticia :first-child {
+  margin: 0;
+  padding: 0;
+}
+.noticia :nth-child(2) {
+  margin: 0;
+  padding: 0;
+}
+.noticia > p:last-child {
+  margin: 0;
+  padding: 0;
+}
+
+.noticia > img {
+  display: block;
+  margin: auto;
+}
+
+footer {
+  background: linear-gradient(45deg, #00204a 45%, #fff 98%);
+  font-family: "Rubik", sans-serif;
+  color: white;
+  padding: 2em;
 }

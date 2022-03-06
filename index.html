@@ -11,7 +11,7 @@
   <body>
     <script type="module" src="./js/main.js"></script>
     <header>
-      <div id="opciones">
+      <div id="opciones" class="FRow JCFlexStart">
         <p>Colegio XXX</p>
         <div id="alumno"><img src="./images/alumno.png" /></div>
         <select>
@@ -24,7 +24,7 @@
         </select>
       </div>
     </header>
-    <nav>
+    <nav class="FRow JCSpaceAround FPositionSticky">
       <a href="./index.html"><img src="./images/home.svg" />Inici</a>
       <a href=""><img src="./images/paper.svg" />Les meves materies</a>
       <a href="./fitxa.html"
@@ -35,8 +35,8 @@
       <a href=""><img src="./images/carpeta.svg" />Carpetes</a>
       <a href=""><img src="./images/settings.svg" />Gestions</a>
     </nav>
-    <div id="container">
-      <main>
+    <div id="container" class="FRow">
+      <main class="FRow">
         <article>
           <section>
             <h1>Inici</h1>
@@ -90,27 +90,42 @@
               </div>
             </div>
             <h1>Noticies</h1>
-            <div id="noticies">
-              <div class="noticia">
+            <div id="noticies" class="FRow JC-SpaceAround">
+              <div class="noticia FColumn">
                 <img src="./images/carnestoltes.jpg" />
                 <p>
                   El passat 25 de febrer vam celebrar el Carnestoltes de
                   Primària al Col.legi
                 </p>
+                <p>Veure +</p>
               </div>
-              <div class="noticia">
-                <img src="./images/carnestoltes.jpg" />
+              <div class="noticia FColumn JCFlexStart">
+                <img src="./images/Scratch.jpg" />
+                <h4>ROBÒTICA 1er TRIMESTRE</h4>
                 <p>
-                  El passat 25 de febrer vam celebrar el Carnestoltes de
-                  Primària al Col.legi
+                  L'alumnat de 6è va aprendre a programar amb la versió "junior"
+                  de l'App "Scratch" durant el primer trimestre.
                 </p>
+                <p>Veure +</p>
               </div>
-              <div class="noticia">
-                <img src="./images/carnestoltes.jpg" />
+              <div class="noticia FColumn">
+                <h4>SANTA CECÍLIA</h4>
                 <p>
-                  El passat 25 de febrer vam celebrar el Carnestoltes de
-                  Primària al Col.legi
+                  Les i els alumnes de Primària i ESO que toquen algun
+                  instrument musical, han participat en un concert de Santa
+                  Cecília.
                 </p>
+                <p>Veure +</p>
+              </div>
+              <div class="noticia FColumn">
+                <!-- <img src="./images/casal.jpg" /> -->
+                <h4>CASAL</h4>
+                <p>
+                  Aquest any des de l'escola volem que els nens i nenes
+                  gaudeixin de l'estiu de la millor manera. Torna el casal
+                  d'estiu
+                </p>
+                <p>Veure +</p>
               </div>
             </div>
           </section>
@@ -220,5 +235,6 @@
         </div>
       </main>
     </div>
+    <footer>Anar a la Web de l'escola</footer>
   </body>
 </html>
