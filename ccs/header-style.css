@@ -1,5 +1,35 @@
-#opciones {
+.FRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.FColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.JC-SpaceAround {
+  justify-content: space-around;
+}
+
+.JCFlexStart {
+  justify-content: flex-start;
+}
+
+.FPositionSticky {
+  position: sticky;
+}
+body {
+  margin: 0;
+  background-color: #fff;
   font-family: "Rubik", sans-serif;
+}
+
+main {
+  background-color: #fff;
+  flex: 1;
+}
+#opciones {
   color: white;
   align-items: center;
   background: linear-gradient(45deg, #00204a 45%, #fff 98%);
@@ -20,9 +50,9 @@
   margin-left: auto;
 }
 #opciones select {
-  margin-right: 0rem;
-  height: 2em;
-  margin-right: 0.8em;
+  height: 2.5em;
+  font-size: 1em;
+  margin-right: 1em;
 }
 
 nav {
@@ -30,15 +60,12 @@ nav {
   color: #fdb44b;
   top: 0;
   height: 3em;
-  text-align: center;
-  vertical-align: text-top;
+  margin: auto;
 }
 
-nav:first-child {
-  padding-top: 1em;
-}
 nav a {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
   text-decoration: none;
   color: #999999;
   display: flex;
@@ -46,31 +73,32 @@ nav a {
   justify-content: center;
   align-items: center;
   flex: 1;
+  border-radius: 20px 20px 0 0;
 }
 
 nav a:nth-child(2n) {
   background-color: #00204a;
-  border-radius: 20px 20px 0 0;
 }
 
 nav a:nth-child(2n + 1) {
   background-color: #fff;
-  border-radius: 20px 20px 0 0;
 }
 nav a img {
   float: left;
   padding-right: 0.1em;
 }
 nav a:hover {
-  text-decoration: none;
   color: #fff;
   background-color: #888;
   color: #fdb44b;
 }
 
-nav a:nth-child(2n):hover {
-  text-decoration: none;
-  color: #fff;
-  background-color: #888;
-  color: #fdb44b;
+footer {
+  background: linear-gradient(45deg, #00204a 45%, #fff 98%);
+  font-family: "Rubik", sans-serif;
+  color: white;
+  padding: 2em;
+  position: absolute;
+  right: 0;
+  left: 0;
 }

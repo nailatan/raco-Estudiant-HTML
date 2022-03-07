@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="ccs/header-style.css" />
+    <!-- <link rel="stylesheet" href="ccs/style.css" /> -->
+    <link rel="stylesheet" href="ccs/fitxa-style.css" />
+    <title>Portal de educación</title>
+  </head>
+  <body>
+    <script type="module" src="./js/fitxa-main.js"></script>
+    <header>
+      <div id="opciones" class="FRow JCFlexStart">
+        <p>Colegio XXX</p>
+        <div id="alumno"><img src="./images/alumno.png" /></div>
+        <select>
+          <option>Pablo Andújar</option>
+          <option>Aina Andújar</option>
+        </select>
+        <select>
+          <option>Català</option>
+          <option>Castellà</option>
+        </select>
+      </div>
+    </header>
+    <nav class="FRow JCSpaceAround FPositionSticky">
+      <a href="./index.html"><img src="./images/home.svg" />Inici</a>
+      <a href=""><img src="./images/paper.svg" />Les meves materies</a>
+      <a href="./fitxa.html"
+        ><img src="./images/profile.svg " />La meva fitxa</a
+      >
+      <a href=""><img src="./images/pages.svg" />Continguts</a>
+      <a href=""><img src="./images/calendar.svg" />Calendari</a>
+      <a href=""><img src="./images/carpeta.svg" />Carpetes</a>
+      <a href=""><img src="./images/settings.svg" />Gestions</a>
+    </nav>
+    <ul class="FRow JCSpaceAround FPositionSticky">
+      <li>Dia a dia</li>
+      <li>Fitxa</li>
+    </ul>
+    <main>
+      <div id="container" class="FRow">
+        <div>
+          <h1>Dia a dia</h1>
+          <form>
+            <label for="materia">Matèria</label>
+            <select name="materia">
+              <option>Totes</option>
+              <option>Català</option>
+              <option>Castellà</option>
+              <option>Matemàtiques</option>
+              <option>Anglès</option>
+              <option>Música</option>
+            </select>
+            <label for="avaluacio">Avaluació</label>
+            <select name="avaluacio">
+              <option>Totes</option>
+              <option>1a avaluació</option>
+              <option>2a avaluació</option>
+              <option>3a avaluació</option>
+            </select>
+          </form>
+
+          <table>
+            <thead>
+              <tr>
+                <td>MATÈRIA</td>
+                <td>CONCEPTE</td>
+                <td>AVALUACIÓ</td>
+                <td>NOTA</td>
+                <td>REVISIÓ</td>
+                <td>COMENTARIS</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Català</td>
+                <td>Temas 1 i 2</td>
+                <td>1a Avaluació</td>
+                <td>9</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Castellà</td>
+                <td>Temas 1 i 2</td>
+                <td>1a Avaluació</td>
+                <td>6</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Català</td>
+                <td>Comprensió lectora Tema 1</td>
+                <td>1a Avaluació</td>
+                <td>9</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Català</td>
+                <td>Dictat Preparat</td>
+                <td>1a Avaluació</td>
+                <td>10</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Català</td>
+                <td>Dictat Preparat</td>
+                <td>2a Avaluació</td>
+                <td>10</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Català</td>
+                <td>Dictat Preparat</td>
+                <td>2a Avaluació</td>
+                <td>10</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Català</td>
+                <td>Examen tema 4</td>
+                <td>2a Avaluació</td>
+                <td>7</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Català</td>
+                <td>Comprensió lectora</td>
+                <td>2a Avaluació</td>
+                <td>8</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Matenàtiques</td>
+                <td>Exàmen Tema 7</td>
+                <td>2a Avaluació</td>
+                <td>10</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Science Bits</td>
+                <td>La Matèria</td>
+                <td>2a Avaluació</td>
+                <td>6.8</td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h1>La meva fitxa</h1>
+          <p>
+            Aute ad est est magna eiusmod Lorem et non ut officia. Dolor fugiat
+            cupidatat aute esse proident pariatur do in cupidatat ad dolor elit
+            duis. Laboris laborum incididunt cillum excepteur adipisicing quis
+            anim id ad. Consequat mollit consequat esse ut cillum. Reprehenderit
+            ea laboris tempor labore magna cillum.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>Anar a la Web de l'escola</footer>
+  </body>
+</html>
