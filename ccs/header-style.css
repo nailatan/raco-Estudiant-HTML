@@ -39,6 +39,7 @@ nav:first-child {
 }
 nav a {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
   text-decoration: none;
   color: #999999;
   display: flex;

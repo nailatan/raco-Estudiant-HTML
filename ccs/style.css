@@ -24,6 +24,7 @@ body {
   margin: 0;
   background-color: #fff;
   height: 100vh;
+  font-family: "Rubik", sans-serif;
 }
 
 main {
@@ -32,6 +33,7 @@ main {
 }
 main article:first-child {
   flex: 1;
+  font-size: 1.2em;
 }
 main article:nth-child(2) {
   flex: 0.3;
@@ -52,9 +54,10 @@ section h1 {
 }
 .accesoContenido:nth-child(2n) > :first-child {
   background-color: #005792;
-  padding: 1em;
+  padding: 0.5em;
   color: #fdb44b;
   font-weight: bold;
+  font-size: 1.5em;
 }
 .accesoContenido:nth-child(2n + 1) > :first-child {
   background-color: #fdb44b;
@@ -86,6 +89,7 @@ table {
 thead th[colspan="5"] {
   text-align: center;
   color: #005792;
+  font-size: 1.5em;
 }
 thead td:first-child {
   text-align: left;
@@ -97,12 +101,14 @@ thead td:last-child {
 table div {
   width: 1.5em;
   height: 1.5em;
+  font-size: 1.2em;
   background: white;
   border-radius: 50%;
   text-align: center;
+  vertical-align: bottom;
 }
 table td {
-  padding: 0.3em;
+  padding: 0.1em;
 }
 
 #contenedorEventos {
@@ -111,19 +117,16 @@ table td {
   height: 100vh;
 }
 .eventosDia {
-  margin: 0em 1em;
-  padding: 0;
+  margin: 0.3em 1em;
+  padding: 0.4em 0 0 0;
 }
 .eventosDia > h1 {
   color: #00204a;
-  padding-top: 0.4em;
-}
-.evento:last-child {
-  padding-bottom: 1em;
+  margin-left: 0.3em;
 }
 .evento > h2 {
   color: #005792;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 .evento > img {
   float: left;
@@ -132,7 +135,7 @@ table td {
 .evento > p {
   font-size: 1em;
   color: black;
-  margin: 0.1em 0.8em;
+  margin: 0.5em 0 0 0;
 }
 
 #detalleDia {
@@ -168,25 +171,24 @@ table td {
   height: 21em;
   min-height: 21em;
   max-height: 21em;
+  position: relative;
 }
-.noticia :first-child {
+.noticia h4 {
   margin: 0;
-  padding: 0;
+  padding: 0.5em 0 0 0;
 }
-.noticia :nth-child(2) {
-  margin: 0;
-  padding: 0;
+
+.noticia > p {
+  text-align: justify;
+  padding: 0.3em;
 }
 .noticia > p:last-child {
-  margin: 0;
+  margin: 0.4em;
   padding: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
-
-.noticia > img {
-  display: block;
-  margin: auto;
-}
-
 footer {
   background: linear-gradient(45deg, #00204a 45%, #fff 98%);
   font-family: "Rubik", sans-serif;
