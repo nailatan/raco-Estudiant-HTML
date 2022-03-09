@@ -137,8 +137,8 @@ table td {
   padding: 0.4em;
   width: 15em;
   height: 21em;
-  min-height: 21em;
-  max-height: 21em;
+  /* min-height: 21em;
+  max-height: 21em; */
   position: relative;
 }
 .noticia h4 {
