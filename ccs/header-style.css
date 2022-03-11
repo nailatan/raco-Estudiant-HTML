@@ -102,3 +102,9 @@ footer {
   right: 0;
   left: 0;
 }
+
+section h1 {
+  font-size: 2em;
+  margin-left: 1em;
+  color: #005792;
+}

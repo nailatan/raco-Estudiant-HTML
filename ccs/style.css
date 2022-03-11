@@ -6,11 +6,6 @@ main article:nth-child(2) {
   flex: 0.2;
 }
 
-section h1 {
-  font-size: 2em;
-  margin-left: 1em;
-  color: #005792;
-}
 #accesos {
   margin-left: 1em;
   display: grid;
@@ -137,8 +132,6 @@ table td {
   padding: 0.4em;
   width: 15em;
   height: 21em;
-  /* min-height: 21em;
-  max-height: 21em; */
   position: relative;
 }
 .noticia h4 {
