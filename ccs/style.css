@@ -150,3 +150,6 @@ table td {
   bottom: 0;
   right: 0;
 }
+#anyoAgenda {
+  display: none;
+}
