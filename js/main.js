@@ -1,4 +1,6 @@
-let convertDiaSemana = [6, 0, 1, 2, 3, 4, 5];
+let conversionDiasSemanaDesdeLunes = [
+  6, 0, 1, 2, 3, 4, 5,
+]; /* 0 = domingo --> 6, 1 = Lunes--> 0 ... */
 let totalMes = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 let meses = [
   "Enero",
@@ -39,7 +41,7 @@ function generarMes(mes, anyo) {
   primeroMes.setUTCFullYear(anyo);
   primeroMes.setMonth(mes);
 
-  let primerDiaSemana = convertDiaSemana[primeroMes.getUTCDay()];
+  let primerDiaSemana = conversionDiasSemanaDesdeLunes[primeroMes.getUTCDay()];
 
   let tituloMes = document.querySelector("thead th[colspan='5'  ]");
   tituloMes.innerText = meses[mes];
