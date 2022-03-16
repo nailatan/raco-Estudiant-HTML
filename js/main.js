@@ -1,7 +1,7 @@
-let conversionDiasSemanaDesdeLunes = [
+let convertGetUCTDay = [
   6, 0, 1, 2, 3, 4, 5,
-]; /* 0 = domingo --> 6, 1 = Lunes--> 0 ... */
-let totalMes = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+]; /* Nuestras semanas empiezan en lunes */
+let totalDiasXMes = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 let meses = [
   "Enero",
   "Febrero",
@@ -35,21 +35,32 @@ function onClickClose(e) {
   popup.style.display = "none";
 }
 
-function generarMes(mes, anyo) {
+function obtenerPrimerDiaMes(mes, anyo) {
   let primeroMes = new Date();
   primeroMes.setDate(1);
   primeroMes.setUTCFullYear(anyo);
   primeroMes.setMonth(mes);
 
-  let primerDiaSemana = conversionDiasSemanaDesdeLunes[primeroMes.getUTCDay()];
+  return primeroMes;
+}
 
-  let tituloMes = document.querySelector("thead th[colspan='5'  ]");
-  tituloMes.innerText = meses[mes];
+function eliminarMesHtml() {
   let bodyAgenda = document.querySelector("tbody");
 
   while (bodyAgenda.firstChild) {
     bodyAgenda.removeChild(bodyAgenda.firstChild);
   }
+}
+
+function generarMes(mes, anyo) {
+  let primeroMes = obtenerPrimerDiaMes(mes, anyo);
+
+  let primerDiaSemana = convertGetUCTDay[primeroMes.getUTCDay()];
+
+  eliminarMesHtml();
+  let tituloMes = document.querySelector("thead th[colspan='5'  ]");
+  tituloMes.innerText = meses[mes];
+  let bodyAgenda = document.querySelector("tbody");
 
   let primeraSemana = document.createElement("tr");
   let diasMesGenerados = 0;
@@ -73,7 +84,7 @@ function generarMes(mes, anyo) {
   let semana;
   for (
     let diaActual = diasMesGenerados + 1;
-    diaActual <= totalMes[mes];
+    diaActual <= totalDiasXMes[mes];
     diaActual++
   ) {
     if (diasEnSemana === 0) {
@@ -85,7 +96,7 @@ function generarMes(mes, anyo) {
     nuevoDia.appendChild(nuevoDIaDiv);
     semana.appendChild(nuevoDia);
     diasEnSemana++;
-    if (diasEnSemana >= 7 || diaActual === totalMes[mes]) {
+    if (diasEnSemana >= 7 || diaActual === totalDiasXMes[mes]) {
       diasEnSemana = 0;
       bodyAgenda.appendChild(semana);
     }
@@ -114,17 +125,13 @@ function cambiarMes(sentido) {
   generarMes(mes, anyo.innerText);
 }
 
+//Generación agenda
 let agenda = document.querySelector("#contenedorAgenda");
 
 let hoy = new Date();
 generarMes(hoy.getMonth(), hoy.getUTCFullYear());
 
-let close = [...document.querySelectorAll("img[src='./images/close.svg']")];
-
-close.map((elem) => {
-  elem.addEventListener("click", onClickClose);
-});
-
+//Gestión de eventos de Mes anterior y posterior
 let MesAnterior = document.querySelector("img[src ='./images/arrow-left.svg']");
 MesAnterior.addEventListener("click", () => cambiarMes("A"));
 
@@ -132,3 +139,10 @@ let mesSiguiente = document.querySelector(
   "img[src ='./images/arrow-right.svg']"
 );
 mesSiguiente.addEventListener("click", () => cambiarMes("S"));
+
+//Gestión de evento para cerrar la ventana con el detalle de eventos de un dia
+let close = [...document.querySelectorAll("img[src='./images/close.svg']")];
+
+close.map((elem) => {
+  elem.addEventListener("click", onClickClose);
+});
