@@ -9,3 +9,4 @@ lateral de clickedu y cambiandolo por un menñu superior.
 - La agenda incliye la navegación de meses (falta el control de aos bisiestos).
 - La sección de noticias, en algun momento podria pasar a mostrar en plan
   carrusel, pero no he sido capaz.
+- Sección "La meva fitxa". Tiene su submenu. Sólo esta implementada la subsección "Dia a Dia".
