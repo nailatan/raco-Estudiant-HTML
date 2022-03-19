@@ -6,7 +6,7 @@ lateral de clickedu y cambiandolo por un menñu superior.
 - La agenda, permite al acceso al detalle del dia, haciendo click
   en el mismo. Ahora mismo es todo estático.
 - La agenda del mes, la he generado con un Javascript básico.
-- La agenda incliye la navegación de meses (falta el control de aos bisiestos).
+- La agenda incluye la navegación de meses (falta el control de años bisiestos).
 - La sección de noticias, en algun momento podria pasar a mostrar en plan
   carrusel, pero no he sido capaz.
 - Sección "La meva fitxa". Tiene su submenu. Sólo esta implementada la subsección "Dia a Dia".
