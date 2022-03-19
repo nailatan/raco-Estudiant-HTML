@@ -23,6 +23,7 @@ body {
   margin: 0;
   background-color: #fff;
   font-family: "Rubik", sans-serif;
+  --border-radius-pestanyas: 1rem 1rem 0 0;
 }
 
 main {
@@ -73,7 +74,7 @@ nav a {
   justify-content: center;
   align-items: center;
   flex: 1;
-  border-radius: 20px 20px 0 0;
+  border-radius: var(--border-radius-pestanyas);
 }
 
 nav a:nth-child(2n) {
