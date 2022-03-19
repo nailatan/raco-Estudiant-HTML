@@ -155,6 +155,9 @@ table td {
   bottom: 0;
   right: 0;
 }
+.noticia > p:last-child a {
+  text-decoration: none;
+}
 #anyoAgenda {
   display: none;
 }
