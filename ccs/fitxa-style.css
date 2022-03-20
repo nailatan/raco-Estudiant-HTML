@@ -95,15 +95,15 @@ form {
   font-size: 1.8rem;
   display: inline-block;
 }
-label {
+#container label {
   padding-left: 2rem;
 }
-label,
-select {
+#container label,
+#container select {
   padding-right: 20rem;
 }
 
-select {
+#container select {
   font-size: 1.8rem;
   border-radius: 0.9rem;
 }
